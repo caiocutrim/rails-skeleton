@@ -1,0 +1,198 @@
+# STATIC PAGES
+- name: "Cursos, treinamentos e e-books sobre Ruby, Git & JavaScript (jQuery & Node.js)"
+  permalink: home
+  type: page
+
+- name: "Cursos e treinamentos sobre Ruby, Git & JavaScript (jQuery & Node.js)"
+  permalink: workshops
+  type: page
+
+# WORKSHOPS
+# - id: 11
+#   type: workshop
+#   name: "Ruby"
+#   permalink: ruby
+#   requirements: "Para participar deste curso, você precisa ter algum conhecimento em outras linguagens de programação."
+#   price: 450.00
+#   sold_out: no
+#   summary: |
+#     O Ruby foi criado em 1993 por Yukihiro "Matz" Matsumoto, mas só se tornou conhecida de fato muito tempo
+#     depois, com o surgimento do Rails. Conhecer o Ruby de verdade e todo o seu poder irá tornar o seu trabalho mais fácil
+#     quando for usar o Rails e qualquer outro framework.
+#
+# - id: 12
+#   type: workshop
+#   name: "Desenvolvimento web com Rails"
+#   permalink: rails
+#   requirements: "Para participar deste curso, você precisa ter algum conhecimento de Ruby e desenvolvimento para web."
+#   price: 450.00
+#   sold_out: no
+#   summary: |
+#     Aprenda a criar aplicativos com Ruby on Rails, o framework que revolucionou o
+#     desenvolvimento web e que há tempos se tornou uma alternativa viável para
+#     desenvolvedores do mundo todo.
+
+- id: 13
+  type: workshop
+  name: "Interfaces web com HTML5 e CSS3"
+  permalink: web-interfaces
+  requirements: "Para participar deste curso, você precisa ter conhecimentos básicos de HTML e CSS ou programação."
+  price: 400.00
+  discount_price: 350.00
+  discount_deadline: 2011-11-06
+  sold_out: yes
+  summary: |
+    Aprenda a criar interfaces com HTML e CSS, através de uma abordagem totalmente prática.
+    Seguindo os padrões web, você irá criar páginas que são semanticamente corretas, respeitando
+    a hierarquia das informações e, por consequência, fáceis de manter.
+
+- id: 4
+  type: workshop
+  name: "RSpec: Dicas & Técnicas"
+  permalink: rspec
+  requirements: "Para participar deste curso, você precisa ter algum conhecimento em Ruby."
+  price: 400.00
+  discount_price: 350.00
+  discount_deadline: 2011-11-06
+  sold_out: no
+  summary: |
+    O RSpec se tornou uma das ferramentas mais poderosas da comunidade Ruby,
+    mas mesmo assim nem todos conhecem a fundo todas as características deste
+    framework de testes. Neste workshop, você verá muitas dicas que mesmos os mais
+    experientes desenvolvedores podem não conhecer.
+
+- id: 6
+  type: workshop
+  name: "Aprenda Node.js na prática"
+  permalink: nodejs
+  requirements: "Para participar deste curso, você precisa ter algum conhecimento de JavaScript."
+  price: 350.00
+  sold_out: yes
+  summary: |
+    Conheça o Node.js, a plataforma criada em cima da engine V8 do
+    Google, em um workshop totalmente mão na massa! Você verá como
+    usar JavaScript para criar aplicações assíncronas e baseadas em eventos,
+    com uma das tecnologias mais promissoras do momento.
+
+- id: 10
+  type: workshop
+  name: "jQuery: Dominando o framework"
+  permalink: jquery
+  requirements: "Para participar deste curso, você precisa ter algum conhecimento de JavaScript."
+  price: 350.00
+  sold_out: yes
+  summary: |
+    Você quer aprender a usar jQuery de verdade?
+    Então chegou a hora! Neste workshop você verá como
+    funciona este framework de JavaScript, entendendo
+    todos os aspectos que fazem do jQuery uma das melhores
+    ferramentas para desenvolvimento de interfaces.
+
+- id: 5
+  type: workshop
+  name: "Git no dia-a-dia"
+  permalink: git
+  requirements: "Para participar deste curso, você precisa ter conhecimentos básicos de uso de terminal."
+  price: 250.00
+  sold_out: yes
+  summary: |
+    Entenda como funciona o Git, o sistema de controle de
+    versões distribuído que vem ganhando cada vez mais atenção.
+    Neste workshop nós iremos explorar os comandos mais utilizados
+    no dia-a-dia, passando por comandos mais avançados que irão ajudar
+    na hora de manter os seus repositórios.
+
+- id: 3
+  type: workshop
+  name: "Ruby Metaprogramming"
+  permalink: ruby-metaprogramming
+  requirements: "Para participar deste curso, você precisa ter algum conhecimento de Ruby."
+  # price: 350.00
+  sold_out: yes
+  summary: |
+    Aprenda a utilizar todo o poder da metaprogramação do Ruby,
+    com exemplos práticos dos patterns mais conhecidos da linguagem,
+    entendendo realmente como as coisas funcionam. Você vai ver que nem tudo é magia negra.
+
+- id: 7
+  type: workshop
+  name: "RubyGems na prática"
+  permalink: rubygems
+  requirements: "Para participar deste curso, você precisa ter algum conhecimento de Ruby."
+  # price: 350.00
+  sold_out: yes
+  summary: |
+    Aprenda a criar bibliotecas e
+    distribuí-las utilizando o RubyGems, o gerenciador
+    de pacotes padrão do Ruby. Você verá como configurar e organizar
+    o seu projeto, criando uma gem binária e integrando-a com o Rails.
+
+# EBOOKS
+- id: 9
+  type: ebook
+  name: "Guia rápido de RSpec"
+  permalink: rspec
+  price: 15.00
+  sold_out: no
+  summary: |
+    Conheça todos os detalhes do RSpec, uma ferramenta de
+    testes para desenvolvedores Ruby. Este guia de mais de 90 páginas
+    cobre praticamente todo o RSpec, e sua integração o Ruby on Rails.
+
+- id: 8
+  type: ebook
+  name: "Ruby Metaprogramming"
+  permalink: ruby-metaprogramming
+  price: 15.00
+  sold_out: no
+  summary: |
+    Aprenda a utilizar todo o poder da metaprogramação
+    do Ruby em um guia de 60 páginas, recheado de exemplos
+    práticos sobre Object Model e definição dinâmica de métodos,
+    e muito mais.
+
+- id: 0
+  type: ebook
+  name: "O que mudou no Ruby 1.9"
+  permalink: ruby19
+  sold_out: no
+  summary: |
+    O Ruby 1.9 trouxe diversas melhorias em relação a
+    versão 1.8. Este guia de 50 páginas vai ajudar você a
+    ter uma visão geral destas mudanças, preparando-o para
+    uma migração e servindo como uma fonte de consulta.
+
+- id: 0
+  type: ebook
+  name: "Documentando projetos com RDoc"
+  permalink: rdoc
+  sold_out: no
+  summary: |
+    Veja como documentar seu projeto Ruby utilizando o RDoc,
+    uma ferramenta que gera documentação à partir de seu
+    código-fonte, sem a necessidade de usar marcações especiais
+    ou sintaxes mais complicadas.
+
+# SCREENCASTS
+- id: 0
+  type: screencast
+  name: "Conhecendo o Pry"
+  permalink: pry
+  links:
+    - title: Pry
+      url: http://pry.github.com
+      summary: "Página do projeto com tutoriais, screencasts e links para artigos."
+    - title: Pry Rails
+      url: http://rubygems.org/gems/pry-rails
+      summary: Gem que modifica o Rails console para utilizar o Pry como REPL padrão.
+    - title: .pryrc
+      url: https://github.com/fnando/dotfiles/blob/master/files/pryrc
+      summary: Minha implementação do arquivo ~/.pryrc utilizado nesse screencast.
+    - title: .irbrc
+      url: https://github.com/fnando/dotfiles/blob/master/files/irbrc
+      summary: Minha implementação do arquivo ~/.irbrc utilizado nesse screencast.
+  summary: |
+    Conheça o Pry, uma alternativa muito mais poderosa que o iRb, o console
+    padrão do Ruby. Ele possui suporte a autocompletion, syntax highlighting,
+    breakpoints, além de muitas outras funcionalidades que não são exploradas
+    nesse screencast.
