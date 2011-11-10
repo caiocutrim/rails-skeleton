@@ -4,4 +4,6 @@ stylesheets:
 
 javascripts:
   application:
+    - dispatcher
+    - i18n
     - application.js
