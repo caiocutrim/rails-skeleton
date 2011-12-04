@@ -19,3 +19,20 @@ audio, canvas, video {
   margin: 0;
   padding: 0;
 }
+
+/**
+ * THE CLEARFIX HACK
+ */
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1;
+}
