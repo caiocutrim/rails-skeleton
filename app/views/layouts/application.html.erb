@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="<%= I18n.locale %>">
-	<head>
-		<%= javascript_include_tag "html5" %>
-		<meta charset="UTF-8">
-		<title><%= page_title %></title>
-		<%= dispatcher_tag %>
-		<%= stylesheet_includes :application %>
-		<link rel="shortcut icon" href="/favicon.ico">
-	</head>
+  <head>
+    <%= javascript_include_tag "html5" %>
+    <meta charset="UTF-8">
+    <title><%= page_title %></title>
+    <%= dispatcher_tag %>
+    <%= stylesheet_includes :application %>
+    <link rel="shortcut icon" href="/favicon.ico">
+  </head>
 
-	<%= body do %>
-		<%= yield %>
-		<%= jquery_script_tag "1.7.0" %>
-		<%= javascript_includes :application %>
-	<% end %>
+  <%= body do %>
+    <%= yield %>
+    <%= jquery_script_tag "1.7.1" %>
+    <%= javascript_includes :application %>
+  <% end %>
 </html>
