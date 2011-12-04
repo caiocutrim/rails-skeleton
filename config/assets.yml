@@ -1,9 +1,10 @@
 stylesheets:
   application:
-    - application.css
+    - application
 
 javascripts:
   application:
+    - hipster
     - dispatcher
     - i18n
-    - application.js
+    - application
