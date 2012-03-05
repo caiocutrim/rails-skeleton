@@ -4,10 +4,11 @@ stylesheets:
     - application
 
 javascripts:
-  application:
-    - augmented.min
+  modernizr:
     - modernizr.min
     - modernizr-nav
+  application:
+    - augmented.min
     - dispatcher
     - i18n
     - application
