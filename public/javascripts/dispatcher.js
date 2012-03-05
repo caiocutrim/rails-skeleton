@@ -14,68 +14,8 @@ var Dispatcher = {
     "destroy": "remove"
   },
 
-  ua: navigator.userAgent,
-
   init: function() {
     Dispatcher.run();
-    Dispatcher.setBrowserInfo();
-  },
-
-  detectIE: function(minimumVersion, callback) {
-    var matches = this.ua.match(/MSIE (\d+)/)
-      , version = parseInt(matches[1], 10)
-    ;
-
-    if (!matches) { return; }
-
-    if (version < minimumVersion) {
-      callback(version, minimumVersion);
-    };
-  },
-
-  setBrowserInfo: function() {
-    $("body")
-      .removeClass("no-js")
-      .addClass("js")
-      .addClass(this.browserInfo().join(" "))
-    ;
-  },
-
-  browserInfo: function() {
-    var meta = ["non-ie"]
-      , matches = null
-    ;
-
-    if (this.ua.match(/firefox/i)) {
-      meta.push("firefox");
-    } else if (this.ua.match(/chrome/i)) {
-      $.merge(meta, ["chrome", "webkit"]);
-    } else if (this.ua.match(/iphone/i)) {
-      $.merge(meta, ["safari", "iphone", "webkit"]);
-    } else if (this.ua.match(/ipad/i)) {
-      $.merge(meta, ["safari", "ipad", "webkit"]);
-    } else if (this.ua.match(/safari/i)) {
-      $.merge(meta, ["safari", "webkit"]);
-    } else if ((matches = this.ua.match(/MSIE (\d+)/))) {
-      var version = parseInt(matches[1], 10);
-
-      meta.shift();
-      $.merge(meta, ["ie", "ie" + version]);
-
-      if (version < 9) {
-        meta.push("lt-ie9");
-      }
-
-      if (version < 8) {
-        meta.push("lt-ie8");
-      }
-    } else if (this.ua.match(/opera/i)) {
-      meta.push("opera");
-    } else if (this.ua.match(/mozilla/i)) {
-      meta.push("mozilla");
-    }
-
-    return meta;
   },
 
   run: function() {
@@ -123,10 +63,5 @@ var Dispatcher = {
 };
 
 (function($){
-  $.stopEvent = function(e) {
-    e.stopPropagation();
-    e.preventDefault();
-  };
-
   $(document).ready(Dispatcher.init);
 })(jQuery);

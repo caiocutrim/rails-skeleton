@@ -5,7 +5,9 @@ stylesheets:
 
 javascripts:
   application:
-    - hipster
+    - augmented.min
+    - modernizr.min
+    - modernizr-nav
     - dispatcher
     - i18n
     - application
