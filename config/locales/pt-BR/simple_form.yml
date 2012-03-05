@@ -6,7 +6,7 @@ pt-BR:
       text: "obrigatório"
       mark: "*"
     error_notification:
-      default_message: "Alguns errors foram encontrados:"
+      default_message: "Hmmmm... Verifique o formulário antes de enviar."
     labels:
       password: "Sua senha"
       username: "Usuário"
