@@ -10,7 +10,6 @@ gem "swiss_knife"             , "~> 1.0"
 
 group :development, :test do
   gem "thin"                  , "~> 1.3"
-  gem "active_reload"         , "~> 0.2"
   gem "awesome_print"         , :require => false
   gem "pry"                   , :require => false
   gem "rspec-rails"           , "~> 2.7"
