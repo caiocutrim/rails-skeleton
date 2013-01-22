@@ -1,25 +1,24 @@
 source :rubygems
 
-gem "rails"                   , "3.2.3"
-gem "i18n-js"                 , "~> 2.0"
-gem "mysql2"                  , "~> 0.3"
-gem "simple_auth"             , "~> 1.4.0"
-gem "simple_form"             , "~> 2.0"
-gem "simple_presenter"        , "~> 0.1"
-gem "swiss_knife"             , "~> 1.0"
+gem "rails", "3.2.11"
+gem "i18n-js", "~> 2.0"
+gem "pg"
+gem "rails-i18n"
+gem "simple_auth"
+gem "simple_form"
+gem "simple_presenter"
+gem "strong_parameters"
+gem "swiss_knife"
 
 group :development, :test do
-  gem "thin"                  , "~> 1.3"
-  gem "awesome_print"         , :require => false
-  gem "pry"                   , :require => false
-  gem "rspec-rails"           , "~> 2.7"
-  gem "rb-fsevent"            , "~> 0.4"
+  gem "thin"
+  gem "rspec-rails"
+  gem "pry-meta", :require => false
 end
 
 group :test do
-  gem "factory_girl"          , "~> 2.2"
-  gem "factory_girl-preload"  , "~> 1.0"
-  gem "test_notifier"         , "~> 0.4", :require => "test_notifier/runner/rspec"
-  gem "spork"                 , "~> 0.9"
-  gem "capybara"              , "~> 1.1"
+  gem "factory_girl"
+  gem "factory_girl-preload"
+  gem "test_notifier", :require => "test_notifier/runner/rspec"
+  gem "capybara"
 end

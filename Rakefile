@@ -5,3 +5,7 @@
 require File.expand_path('../config/application', __FILE__)
 
 Skeleton::Application.load_tasks
+
+Dir[File.expand_path("../app/tasks/**/*.{rake,rb}", __FILE__)].each do |file|
+  load file
+end

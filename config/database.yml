@@ -1,0 +1,15 @@
+defaults: &defaults
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: vagrant
+  password:
+  min_messages: warning
+
+development:
+  <<: *defaults
+  database: skeleton_development
+
+test:
+  <<: *defaults
+  database: skeleton_test
