@@ -4,8 +4,9 @@ require "rails"
 require "active_record/railtie"
 require "action_controller/railtie"
 require "action_mailer/railtie"
+require "sprockets/railtie"
 
-Bundler.require(:default, Rails.env) if defined?(Bundler)
+Bundler.require(*Rails.groups(:assets => %w[development test]))
 
 module Skeleton
   class Application < Rails::Application
@@ -22,5 +23,7 @@ module Skeleton
         :fixtures => false,
         :view_specs => false
     config.active_record.whitelist_attributes = true
+    config.assets.precompile += %w[head.js]
+    config.assets.version = "1.0"
   end
 end
